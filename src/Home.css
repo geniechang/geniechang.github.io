@@ -1,0 +1,26 @@
+.Home-container {
+  min-height: 100%;
+  background: url(./Background.svg) no-repeat center;
+  background-size: cover;
+}
+
+.Home-white-color {
+  color: #f2f2f2;
+}
+
+.Home-genie {
+  animation: Home-genie-bounce-up 2s ease-in-out infinite;
+  width: 100%;
+}
+
+@keyframes Home-genie-bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
