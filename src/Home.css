@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.Home-project-cards {
+  cursor: pointer;
+}
+
 @keyframes Home-genie-bounce-up {
   0% {
     transform: translateY(0);
