@@ -1,7 +1,7 @@
 .Home-container {
-  min-height: 100%;
-  background: url(./Background.svg) no-repeat center;
+  background: url(./Stars.svg) no-repeat center, linear-gradient(#e66465, #9198e5);
   background-size: cover;
+  margin-bottom: -2px; /* hack to solve a ghost line issue */
 }
 
 .Home-white-color {
@@ -9,7 +9,7 @@
 }
 
 .Home-genie {
-  animation: Home-genie-bounce-up 2s ease-in-out infinite;
+  animation: Home-genie-bounce-up 3s ease-in-out infinite;
   width: 100%;
 }
 

@@ -3,10 +3,10 @@ import Home from "./Home";
 
 function App() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <Header />
       <Home />
-    </>
+    </div>
   );
 }
 
