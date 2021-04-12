@@ -6,6 +6,8 @@ import {
 
 import Header from "./Header";
 import Home from "./Home";
+import IncidentTrackingApp from "./IncidentTrackingApp";
+import ScrollToTop from "./ScrollToTop";
 
 import "./App.css";
 
@@ -14,6 +16,7 @@ export default function App() {
     <div className="App-container">
       <Header />
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route path="/projects/incident-tracking-app">
             <IncidentTrackingApp />
@@ -28,11 +31,6 @@ export default function App() {
       </Router>
     </div>
   );
-}
-
-
-function IncidentTrackingApp() {
-  return <h2>IncidentTrackingApp</h2>;
 }
 
 function VoucherApplicationRedesign() {

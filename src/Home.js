@@ -1,12 +1,14 @@
 import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap'
+
+import incidentTrackingAppCover from "./IncidentTrackingApp/cover.svg";
 import genie from "./genie.svg";
 import logo from "./logo.svg";
 import wave from './Wave.svg';
 
 import "./Home.css";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <div className="Home-container">
@@ -39,13 +41,13 @@ function Home() {
             <Col xs={12} md={6}>
               <LinkContainer to="/projects/incident-tracking-app">
                 <Card className="Home-project-cards">
-                  <Card.Img variant="top" src={logo} />
+                  <Card.Img variant="top" src={incidentTrackingAppCover} />
                   <Card.Body>
                     <Card.Title>Incident Tracking App</Card.Title>
                     <Card.Text>
-                      <Badge variant="primary">UX</Badge>{" "}
-                      <Badge variant="primary">UI</Badge>{" "}
-                      <Badge variant="primary">Tablet App</Badge>
+                      <Badge pill variant="primary">UX</Badge>{" "}
+                      <Badge pill variant="primary">UI</Badge>{" "}
+                      <Badge pill variant="primary">Tablet App</Badge>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis dignissim ornare consequat egestas quis odio at faucibus etiam. Vel a auctor et dignissim commodo et pretium a morbi. Posuere tellus sit proin eget. Suspendisse id diam a quisque tristique etiam morbi.
                     </Card.Text>
@@ -60,8 +62,8 @@ function Home() {
                   <Card.Body>
                     <Card.Title>Voucher Application Redesign</Card.Title>
                     <Card.Text>
-                      <Badge variant="primary">UI</Badge>{" "}
-                      <Badge variant="primary">Mobile App</Badge>
+                      <Badge pill variant="primary">UI</Badge>{" "}
+                      <Badge pill variant="primary">Mobile App</Badge>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis dignissim ornare consequat egestas quis odio at faucibus etiam. Vel a auctor et dignissim commodo et pretium a morbi. Posuere tellus sit proin eget. Suspendisse id diam a quisque tristique etiam morbi.
                     </Card.Text>
@@ -79,5 +81,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;
