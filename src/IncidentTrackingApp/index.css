@@ -1,3 +1,19 @@
+.IncidentTrackingApp p {
+  font-size: 1.5em;
+  margin-bottom: 80px;
+}
+
+.IncidentTrackingApp h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.IncidentTrackingApp h4 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 .IncidentTrackingApp-cover {
   background: #f2f2f2;
   margin-bottom: -2px; /* hack to solve a ghost line issue */
@@ -10,5 +26,10 @@
 }
 
 .IncidentTrackingApp-badge {
+  background: #3a70a6;
   box-shadow: 0px 6px 20px 0px #bbbbbb;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 16px;
+  padding: 6px 16px 8px 16px;
 }

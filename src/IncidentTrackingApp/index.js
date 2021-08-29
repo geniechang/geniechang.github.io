@@ -12,17 +12,42 @@ import "./index.css";
 export default function IncidentTrackingApp() {
   return (
     <>
-      <div className="IncidentTrackingApp-cover">
+      <div className="IncidentTrackingApp IncidentTrackingApp-cover">
         <Container style={{ padding: "100px 0 150px 0" }}>
           <Row>
-            <Col xs={12} md={6} style={{ flexDirection: "column" }}>
-              <h1 style={{ fontSize: "3.5em", paddingTop: "0.6em" }}>
+            <Col xs={12} md={7} style={{ flexDirection: "column" }}>
+              <h1
+                style={{
+                  fontSize: "4em",
+                  fontWeight: 700,
+                  lineHeight: "1.4em",
+                  paddingTop: "0.6em",
+                }}
+              >
                 Incident Tracking Application
               </h1>
               <div style={{ padding: "30px 0" }}>
-                <Badge pill variant="primary" className="IncidentTrackingApp-badge">UX</Badge>{" "}
-                <Badge pill variant="primary" className="IncidentTrackingApp-badge">UI</Badge>{" "}
-                <Badge pill variant="primary" className="IncidentTrackingApp-badge">Tablet App</Badge>
+                <Badge
+                  pill
+                  variant="primary"
+                  className="IncidentTrackingApp-badge"
+                >
+                  UX
+                </Badge>
+                <Badge
+                  pill
+                  variant="primary"
+                  className="IncidentTrackingApp-badge"
+                >
+                  UI
+                </Badge>
+                <Badge
+                  pill
+                  variant="primary"
+                  className="IncidentTrackingApp-badge"
+                >
+                  Tablet App
+                </Badge>
               </div>
             </Col>
             <Col>
@@ -32,25 +57,25 @@ export default function IncidentTrackingApp() {
         </Container>
         <img src={wave} style={{ width: "100%" }} />
       </div>
-      <div style={{ background: "#ffffff" }}>
+      <div className="IncidentTrackingApp" style={{ background: "#ffffff" }}>
         <Container>
           <Row className="justify-content-center">
             <Col>
-              <h1 style={{ textAlign: "center", padding: "100px 0 50px 0" }}>Overview</h1>
+              <h1 style={{ textAlign: "center", padding: "100px 0 50px 0" }}>
+                Overview
+              </h1>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col xs md={8} lg={6}>
+            <Col md={8}>
               <p style={{ textAlign: "center" }}>
-                The goal of this project is to design an application for boiler users in manufacturing industry to have better control over the machine they are using on daily basis.
-                The design process shown here, particularly focus on the incident pages.
+                The goal of this project is to design an application for boiler
+                users in manufacturing industry to have better control over the
+                machine they are using on daily basis. The design process shown
+                here, particularly focus on the incident pages.
               </p>
             </Col>
           </Row>
-        </Container>
-      </div>
-      <div style={{ background: "#ffffff" }}>
-        <Container>
           <Row>
             <Col>
               <h1 style={{ padding: "100px 0 50px 0" }}>Research</h1>
@@ -65,9 +90,10 @@ export default function IncidentTrackingApp() {
             </Col>
             <Col xs={12} md={8} lg={6}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Non imperdiet amet, quis odio gravida sed. Etiam a eu enim amet pellentesque ac.
-                Hac lobortis aenean massa aliquam sed morbi orci, a. Id nunc, neque habitant fermentum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                imperdiet amet, quis odio gravida sed. Etiam a eu enim amet
+                pellentesque ac. Hac lobortis aenean massa aliquam sed morbi
+                orci, a. Id nunc, neque habitant fermentum.
               </p>
             </Col>
           </Row>
@@ -80,9 +106,18 @@ export default function IncidentTrackingApp() {
             <img src={persona} style={{ width: "100%" }} />
           </Row>
           <Row>
-            <Col style={{ alignItems: "baseline", display: "flex", justifyContent: "space-between", padding: "100px 0 20px 0" }}>
+            <Col
+              style={{
+                alignItems: "baseline",
+                display: "flex",
+                justifyContent: "space-between",
+                padding: "100px 0 20px 0",
+              }}
+            >
               <h1>Journey Map</h1>
-              <h2><b>Sean’s</b> Daily Routine</h2>
+              <h2>
+                <b>Sean’s</b> Daily Routine
+              </h2>
             </Col>
           </Row>
           <Row>
@@ -90,8 +125,11 @@ export default function IncidentTrackingApp() {
           </Row>
         </Container>
       </div>
-      <div className="IncidentTrackingApp-flowchart">
-        <img src={wave} style={{ marginTop: -1, transform: "rotate(180deg", width: "100%" }} />
+      <div className="IncidentTrackingApp IncidentTrackingApp-flowchart">
+        <img
+          src={wave}
+          style={{ marginTop: -1, transform: "rotate(180deg)", width: "100%" }}
+        />
         <Container style={{ padding: "100px 0 150px 0" }}>
           <Row>
             <Col style={{ padding: "100px 0 20px 0" }}>
@@ -121,7 +159,9 @@ export default function IncidentTrackingApp() {
         <Container>
           <Row>
             <Col>
-              <h1 style={{ padding: "100px 0 50px 0" }}>Low-Fidelity Prototype</h1>
+              <h1 style={{ padding: "100px 0 50px 0" }}>
+                Low-Fidelity Prototype
+              </h1>
             </Col>
           </Row>
         </Container>

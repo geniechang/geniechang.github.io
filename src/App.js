@@ -4,10 +4,12 @@ import {
   Route,
 } from "react-router-dom";
 
+import Footer from "./Footer";
 import Header from "./Header";
 import Home from "./Home";
 import IncidentTrackingApp from "./IncidentTrackingApp";
 import ScrollToTop from "./ScrollToTop";
+import VoucherApplicationRedesign from "./VoucherApplicationRedesign";
 
 import "./App.css";
 
@@ -29,10 +31,7 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
-}
-
-function VoucherApplicationRedesign() {
-  return <h2>VoucherApplicationRedesign</h2>;
 }

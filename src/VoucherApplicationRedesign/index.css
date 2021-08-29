@@ -1,0 +1,41 @@
+.VoucherApplicationRedesign p {
+  font-size: 1.5em;
+  margin-bottom: 80px;
+}
+
+.VoucherApplicationRedesign h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.VoucherApplicationRedesign h4 {
+  color: #ff9f40;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.VoucherApplicationRedesign-cover {
+  background: #2c2c2c;
+  color: #fff;
+  margin-bottom: -2px; /* hack to solve a ghost line issue */
+}
+
+.VoucherApplicationRedesign-flowchart {
+  background: #f2f2f2;
+  margin-top: 100px;
+  margin-bottom: -2px; /* hack to solve a ghost line issue */
+}
+
+.VoucherApplicationRedesign-badge {
+  background: #ff9f40;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 16px;
+  padding: 6px 16px 8px 16px;
+}
+
+.VoucherApplicationRedesign-highlight {
+  color: #ff9f40;
+}
