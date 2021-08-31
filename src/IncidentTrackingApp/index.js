@@ -3,8 +3,13 @@ import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 import wave from "../Wave.svg";
 import appFlow from "./app_flow.png";
 import cover from "./cover.svg";
-import incidentFlow from "./incident_flow.svg";
+import flowChart from "./flow_chart.svg";
 import journeyMap from "./journey_map.png";
+import lowFidelityPrototype from "./low_fidelity_prototype.svg";
+import incidentReport from "./incident_report.svg";
+import incidentTicket from "./incident_ticket.svg";
+import troubleshooting from "./troubleshooting.svg";
+import generalReport from "./general_report.svg";
 import persona from "./persona.svg";
 
 import "./index.css";
@@ -115,9 +120,9 @@ export default function IncidentTrackingApp() {
               }}
             >
               <h1>Journey Map</h1>
-              <h2>
+              <h4>
                 <b>Sean’s</b> Daily Routine
-              </h2>
+              </h4>
             </Col>
           </Row>
           <Row>
@@ -132,41 +137,71 @@ export default function IncidentTrackingApp() {
         />
         <Container style={{ padding: "100px 0 150px 0" }}>
           <Row>
-            <Col style={{ padding: "100px 0 20px 0" }}>
-              <h1>Flowchart</h1>
-              <h2>App Flow</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col lg={8}>
-              <img src={appFlow} style={{ width: "100%" }} />
+            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
+              <h1>Flow Chart</h1>
             </Col>
           </Row>
           <Row>
-            <Col style={{ padding: "100px 0 20px 0" }}>
-              <h2>Incident Flow</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col lg={8}>
-              <img src={incidentFlow} style={{ width: "100%" }} />
+            <Col>
+              <img src={flowChart} style={{ width: "100%" }} />
             </Col>
           </Row>
         </Container>
         <img src={wave} style={{ width: "100%" }} />
       </div>
-      <div style={{ background: "#ffffff" }}>
+      <div className="IncidentTrackingApp" style={{ background: "#ffffff" }}>
         <Container>
           <Row>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                padding: "100px 0 50px 0",
+              }}
+            >
+              <h1>Low-Fidelity Prototype</h1>
+            </Col>
+          </Row>
+          <Row>
             <Col>
-              <h1 style={{ padding: "100px 0 50px 0" }}>
-                Low-Fidelity Prototype
+              <img src={lowFidelityPrototype} style={{ width: "100%" }} />
+            </Col>
+          </Row>
+          <Row
+            style={{
+              padding: "200px 0 50px 0",
+            }}
+          >
+            <Col>
+              <h1>UI Style</h1>
+            </Col>
+          </Row>
+          <Row
+            style={{
+              paddingTop: 200,
+              paddingBottom: 100,
+            }}
+          >
+            <Col sm={6}>
+              <h1
+                style={{
+                  paddingBottom: 100,
+                }}
+              >
+                High-Fidelity
+                <br />
+                Prototype
               </h1>
+              <img src={troubleshooting} style={{ width: "100%" }} />
+              <img src={generalReport} style={{ width: "100%" }} />
+            </Col>
+            <Col sm={6}>
+              <img src={incidentTicket} style={{ width: "100%" }} />
+              <img src={incidentReport} style={{ width: "100%" }} />
             </Col>
           </Row>
         </Container>
       </div>
-      <div style={{ height: 500 }} />
     </>
   );
 }
