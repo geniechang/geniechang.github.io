@@ -104,7 +104,7 @@ export default function VoucherApplicationRedesign() {
             </Col>
           </Row>
           <Row>
-            <Col style={{ padding: "100px 0 20px 0" }}>
+            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
               <h1>Flow Chart</h1>
               <p>voucher application</p>
             </Col>
@@ -134,7 +134,7 @@ export default function VoucherApplicationRedesign() {
             </Col>
           </Row>
           <Row>
-            <Col style={{ padding: "100px 0 100px 0" }}>
+            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
               <h1>Low-Fidelity Prototype</h1>
             </Col>
           </Row>
@@ -148,7 +148,7 @@ export default function VoucherApplicationRedesign() {
         <Container>
           <Row>
             <Col>
-              <h1 style={{ padding: "100px 0 50px 0" }}>UI Style</h1>
+              <h1 style={{ paddingTop: 100, paddingBottom: 50 }}>UI Style</h1>
               <h4>Typography</h4>
             </Col>
           </Row>
