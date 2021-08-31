@@ -1,0 +1,53 @@
+.Home h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.Home-container {
+  background: url(./Stars.svg) no-repeat center,
+    linear-gradient(#e66465, #9198e5);
+  background-size: cover;
+  margin-bottom: -2px; /* hack to solve a ghost line issue */
+}
+
+.Home-white-color {
+  color: #f2f2f2;
+  text-align: end;
+}
+
+.Home-genie {
+  animation: Home-genie-bounce-up 3s ease-in-out infinite;
+  width: 100%;
+}
+
+.Home-badge {
+  background: #3a70a6;
+  box-shadow: 0px 6px 20px 0px #bbbbbb;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 16px;
+  padding: 6px 16px 8px 16px;
+}
+
+.Home-project-h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.Home-project-p {
+  margin-top: 30px;
+}
+
+@keyframes Home-genie-bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -18,7 +18,7 @@ export default function IncidentTrackingApp() {
   return (
     <>
       <div className="IncidentTrackingApp IncidentTrackingApp-cover">
-        <Container style={{ padding: "100px 0 150px 0" }}>
+        <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
             <Col xs={12} md={7} style={{ flexDirection: "column" }}>
               <h1
@@ -103,7 +103,7 @@ export default function IncidentTrackingApp() {
             </Col>
           </Row>
           <Row>
-            <Col style={{ padding: "100px 0 20px 0" }}>
+            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
               <h1 style={{ textAlign: "end" }}>Persona</h1>
             </Col>
           </Row>
@@ -116,7 +116,8 @@ export default function IncidentTrackingApp() {
                 alignItems: "baseline",
                 display: "flex",
                 justifyContent: "space-between",
-                padding: "100px 0 20px 0",
+                paddingTop: 100,
+                paddingBottom: 20,
               }}
             >
               <h1>Journey Map</h1>
@@ -135,7 +136,7 @@ export default function IncidentTrackingApp() {
           src={wave}
           style={{ marginTop: -1, transform: "rotate(180deg)", width: "100%" }}
         />
-        <Container style={{ padding: "100px 0 150px 0" }}>
+        <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
             <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
               <h1>Flow Chart</h1>
@@ -156,7 +157,8 @@ export default function IncidentTrackingApp() {
               style={{
                 display: "flex",
                 justifyContent: "flex-end",
-                padding: "100px 0 50px 0",
+                paddingTop: 100,
+                paddingBottom: 50,
               }}
             >
               <h1>Low-Fidelity Prototype</h1>
@@ -169,7 +171,8 @@ export default function IncidentTrackingApp() {
           </Row>
           <Row
             style={{
-              padding: "200px 0 50px 0",
+              paddingTop: 200,
+              paddingBottom: 50,
             }}
           >
             <Col>

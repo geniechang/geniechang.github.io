@@ -19,7 +19,7 @@ export default function VoucherApplicationRedesign() {
   return (
     <>
       <div className="VoucherApplicationRedesign VoucherApplicationRedesign-cover">
-        <Container style={{ padding: "100px 0 150px 0" }}>
+        <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
             <Col md={8}>
               <h1
@@ -59,7 +59,8 @@ export default function VoucherApplicationRedesign() {
             <Col>
               <h1
                 style={{
-                  padding: "100px 0 30px 0",
+                  paddingTop: 100,
+                  paddingBottom: 30,
                   textAlign: "center",
                 }}
               >

@@ -11,6 +11,7 @@ function Header() {
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/#projects">Projects</Nav.Link>
+            {/* TODO: add nav for specific projects? */}
             <Nav.Link href="/#about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
