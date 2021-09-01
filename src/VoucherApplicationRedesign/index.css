@@ -1,6 +1,9 @@
 .VoucherApplicationRedesign p {
   font-size: 1.5em;
-  margin-bottom: 80px;
+}
+
+.VoucherApplicationRedesign ul {
+  font-size: 1.5em;
 }
 
 .VoucherApplicationRedesign h1 {

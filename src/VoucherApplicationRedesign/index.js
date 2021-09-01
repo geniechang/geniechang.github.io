@@ -12,6 +12,10 @@ import buttons from "./buttons.svg";
 import colors from "./colors.svg";
 import iconography from "./iconography.svg";
 import shadows from "./shadows.svg";
+import clip1 from "./clip1.mp4";
+import clip2 from "./clip2.mp4";
+import clip3 from "./clip3.mp4";
+import clip4 from "./clip4.mp4";
 
 import "./index.css";
 
@@ -82,26 +86,24 @@ export default function VoucherApplicationRedesign() {
                   application flow for online retailing app Zalora.
                 </b>
               </p>
-              <h4>Problem</h4>
+              <h4 style={{ marginTop: 80 }}>Problem</h4>
               <p>
                 The platform always has several different promotion going at the
                 same period of time. Users have to enter the voucher code one by
                 one to compare between different promotion codes, which is time
                 comsuming and irritating.
               </p>
-              <h4>Redesign Plan</h4>
-              <p>
-                Design a voucher comparison page for user, so they can:
-                <ul>
-                  <li>compare all vouchers at once</li>
-                  <li>see how much saved with the voucher</li>
-                  <li>
-                    see which item is applicable with the voucher, and which is
-                    not
-                  </li>
-                  <li>get suggestions on how to save more with the voucher</li>
-                </ul>
-              </p>
+              <h4 style={{ marginTop: 80 }}>Redesign Plan</h4>
+              <p>Design a voucher comparison page for user, so they can:</p>
+              <ul>
+                <li>compare all vouchers at once</li>
+                <li>see how much saved with the voucher</li>
+                <li>
+                  see which item is applicable with the voucher, and which is
+                  not
+                </li>
+                <li>get suggestions on how to save more with the voucher</li>
+              </ul>
             </Col>
           </Row>
           <Row>
@@ -196,10 +198,81 @@ export default function VoucherApplicationRedesign() {
           src={wave}
           style={{ marginTop: -1, transform: "rotate(180deg)", width: "100%" }}
         />
-        <Container>
+        <Container style={{ fontSize: 13.33 }}>
           <Row style={{ marginTop: 60 }}>
             <Col>
               <h1 style={{ textAlign: "center" }}>High-Fidelity Prototype</h1>
+            </Col>
+          </Row>
+          <Row style={{ marginTop: 150 }}>
+            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+              <video autoPlay loop muted style={{ width: "80%" }}>
+                <source src={clip1} type="video/mp4" />
+              </video>
+            </Col>
+            <Col
+              style={{
+                alignItems: "center",
+                display: "flex",
+                paddingLeft: 50,
+                paddingRight: 50,
+              }}
+            >
+              <p>
+                Simply tap on compare vouchdres to get suggestions on all the
+                avaliable vouchers
+              </p>
+            </Col>
+          </Row>
+          <Row style={{ marginTop: 150 }}>
+            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+              <video autoPlay loop muted style={{ width: "80%" }}>
+                <source src={clip2} type="video/mp4" />
+              </video>
+            </Col>
+            <Col
+              style={{
+                alignItems: "center",
+                display: "flex",
+                paddingLeft: 50,
+                paddingRight: 50,
+              }}
+            >
+              <ul>
+                <li>Compare all the avaliable vouchers at once</li>
+                <li>
+                  Get information on how to apply promotions that’s not yet
+                  applicable
+                </li>
+                <br />
+                <li>
+                  Add voucher manually into the list (e.g. birthday voucher)
+                  <video autoPlay loop muted style={{ width: "80%" }}>
+                    <source src={clip4} type="video/mp4" />
+                  </video>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Row style={{ marginTop: 150 }}>
+            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+              <video autoPlay loop muted style={{ width: "80%" }}>
+                <source src={clip3} type="video/mp4" />
+              </video>
+            </Col>
+            <Col
+              style={{
+                alignItems: "center",
+                display: "flex",
+                paddingLeft: 50,
+                paddingRight: 50,
+              }}
+            >
+              <p>
+                Different view to compare more information of different
+                vouchers. Simply tap on apply to use the voucher after
+                comparison.
+              </p>
             </Col>
           </Row>
         </Container>
