@@ -2,6 +2,7 @@
   font-size: 3em;
   font-weight: 700;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .Home-container {
@@ -22,7 +23,7 @@
 }
 
 .Home-badge {
-  background: #3a70a6;
+  background: #ff9f40;
   box-shadow: 0px 6px 20px 0px #bbbbbb;
   font-size: 16px;
   font-weight: 400;
@@ -30,14 +31,37 @@
   padding: 6px 16px 8px 16px;
 }
 
-.Home-project-h4 {
+.Home-projects h4 {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.Home-project-p {
+.Home-projects p {
+  font-size: 24px;
   margin-top: 30px;
+}
+
+.Home-projects-more {
+  color: #ff9f40;
+  font-size: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Home-projects-more:hover {
+  color: #ff9f40;
+  text-decoration: underline;
+}
+
+.Home-about {
+  margin-bottom: 150px;
+}
+
+.Home-about p {
+  font-size: 24px;
+  max-width: 920px;
+  text-align: center;
 }
 
 @keyframes Home-genie-bounce-up {

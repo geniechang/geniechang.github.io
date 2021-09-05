@@ -1,10 +1,12 @@
-import { Badge, Card, Col, Container, Row } from "react-bootstrap";
+import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 import incidentTrackingAppCover from "../IncidentTrackingApp/cover.svg";
+import voucherAppliactionRedesignCover from "../VoucherApplicationRedesign/cover-home.svg";
 import genie from "./genie.svg";
-import logo from "./logo.svg";
+import about from "./about.svg";
 import wave from "../Wave.svg";
+import aboutSmiley from "./about-smiley.svg";
 
 import "./index.css";
 
@@ -42,80 +44,118 @@ export default function Home() {
         </Container>
         <img src={wave} style={{ width: "100%" }} />
       </div>
-      <div className="Home" style={{ background: "#ffffff" }}>
+      <div className="Home Home-projects" style={{ background: "#ffffff" }}>
         <Container>
           <Row>
-            <Col className="justify-content-center" style={{ display: "flex" }}>
-              <h1 id="projects" style={{ paddingTop: 100, paddingBottom: 100 }}>
+            <Col>
+              <h1
+                id="projects"
+                style={{
+                  paddingTop: 100,
+                  paddingBottom: 100,
+                }}
+              >
                 Projects
               </h1>
             </Col>
           </Row>
-          <LinkContainer
-            to="/projects/incident-tracking-app"
-            style={{ cursor: "pointer" }}
-          >
-            <Row>
-              <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
+          <Row>
+            <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
+              <LinkContainer
+                to="/projects/incident-tracking-app"
+                style={{ cursor: "pointer", width: "100%" }}
+              >
                 <img src={incidentTrackingAppCover} style={{ width: "100%" }} />
-              </Col>
-              <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
-                <h4 className="Home-project-h4">
-                  Incident Tracking Application
-                </h4>
-                <Badge pill variant="primary" className="Home-badge">
-                  UX
-                </Badge>{" "}
-                <Badge pill variant="primary" className="Home-badge">
-                  UI
-                </Badge>{" "}
-                <Badge pill variant="primary" className="Home-badge">
-                  Tablet App
-                </Badge>
-                <p className="Home-project-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                  dignissim ornare consequat egestas quis odio at faucibus
-                  etiam. Vel a auctor et dignissim commodo et pretium a morbi.
-                  Posuere tellus sit proin eget. Suspendisse id diam a quisque
-                  tristique etiam morbi.
-                </p>
-              </Col>
-            </Row>
-          </LinkContainer>
-          <LinkContainer
-            to="/projects/voucher-application-redesign"
-            style={{ cursor: "pointer", marginTop: 150 }}
-          >
-            <Row>
-              <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
-                <img src={logo} style={{ width: "100%" }} />
-              </Col>
-              <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
-                <h4 className="Home-project-h4">
-                  Voucher Application Redesign
-                </h4>
-                <Badge pill variant="primary" className="Home-badge">
-                  UI
-                </Badge>{" "}
-                <Badge pill variant="primary" className="Home-badge">
-                  Tablet App
-                </Badge>
-                <p className="Home-project-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                  dignissim ornare consequat egestas quis odio at faucibus
-                  etiam. Vel a auctor et dignissim commodo et pretium a morbi.
-                  Posuere tellus sit proin eget. Suspendisse id diam a quisque
-                  tristique etiam morbi.
-                </p>
-              </Col>
-            </Row>
-          </LinkContainer>
-          <Row className="justify-content-center">
-            <h1 id="about" style={{ padding: "100px 0 50px 0" }}>
-              About
-            </h1>
+              </LinkContainer>
+            </Col>
+            <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
+              <h4>Incident Management Application</h4>
+              <Badge pill variant="primary" className="Home-badge">
+                UX
+              </Badge>{" "}
+              <Badge pill variant="primary" className="Home-badge">
+                UI
+              </Badge>{" "}
+              <Badge pill variant="primary" className="Home-badge">
+                Tablet App
+              </Badge>
+              <p>
+                The goal of this project is to design an application to manage
+                machineries that are often used in traditional industries. This
+                project mainly focuses on the incident response lifecycle.
+              </p>
+              <Button
+                href="/projects/incident-tracking-app"
+                variant="link"
+                className="Home-projects-more"
+              >
+                Read More
+              </Button>
+            </Col>
           </Row>
-          <div style={{ height: 500 }} />
+          <Row style={{ marginTop: 150 }}>
+            <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
+              <LinkContainer
+                to="/projects/voucher-application-redesign"
+                style={{ cursor: "pointer", width: "100%" }}
+              >
+                <img
+                  src={voucherAppliactionRedesignCover}
+                  style={{ width: "100%" }}
+                />
+              </LinkContainer>
+            </Col>
+            <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
+              <h4>Voucher Application Redesign</h4>
+              <Badge pill variant="primary" className="Home-badge">
+                UI
+              </Badge>{" "}
+              <Badge pill variant="primary" className="Home-badge">
+                Tablet App
+              </Badge>
+              <p>
+                Online retailing platform Zalora often provides an overwhelming
+                amount of vouchers for their users to choose from during
+                checkout. The redesign helps their users to quickly take the
+                best pick among them, which removes the frustration from the
+                checkout experience.
+              </p>
+              <Button
+                href="/projects/voucher-application-redesign"
+                variant="link"
+                className="Home-projects-more"
+              >
+                Read More
+              </Button>
+            </Col>
+          </Row>
+          <Row className="Home-about">
+            <Col
+              style={{
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <h1 id="about" style={{ paddingTop: 100, paddingBottom: 50 }}>
+                About
+              </h1>
+              <img src={about} style={{ width: 300 }} />
+              <h1 style={{ color: "#ff9f40", marginTop: 40, marginBottom: 60 }}>
+                Hi!
+              </h1>
+              <p>
+                I am a user interface and user experience designer who currently
+                lives in Singapore. <br />I am hungry to learn everything that
+                makes me a better designer, and also hungry to eat all the yummy
+                food out there that I am yet to try. <br />
+              </p>
+              <p style={{ marginTop: 24, marginBottom: 60 }}>
+                Hope you like my work, please feel free to get in touch with me.
+              </p>
+              <img src={aboutSmiley} />
+            </Col>
+          </Row>
         </Container>
       </div>
     </>

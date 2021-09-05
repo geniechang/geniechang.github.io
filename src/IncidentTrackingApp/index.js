@@ -29,7 +29,7 @@ export default function IncidentTrackingApp() {
                   paddingTop: "0.6em",
                 }}
               >
-                Incident Tracking Application
+                Incident Management Application
               </h1>
               <div style={{ padding: "30px 0" }}>
                 <Badge
