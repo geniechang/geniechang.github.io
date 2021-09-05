@@ -4,7 +4,7 @@ import wave from "../Wave.svg";
 import appFlow from "./app_flow.png";
 import cover from "./cover.svg";
 import flowChart from "./flow_chart.svg";
-import journeyMap from "./journey_map.png";
+import journeyMap from "./journey_map.svg";
 import lowFidelityPrototype from "./low_fidelity_prototype.svg";
 import incidentReport from "./incident_report.svg";
 import incidentTicket from "./incident_ticket.svg";
@@ -20,7 +20,7 @@ export default function IncidentTrackingApp() {
       <div className="IncidentTrackingApp IncidentTrackingApp-cover">
         <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
-            <Col xs={12} md={7} style={{ flexDirection: "column" }}>
+            <Col>
               <h1
                 style={{
                   fontSize: "4em",
@@ -29,8 +29,14 @@ export default function IncidentTrackingApp() {
                   paddingTop: "0.6em",
                 }}
               >
-                Incident Management Application
+                Incident Management
+                <br />
+                Application
               </h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
               <div style={{ padding: "30px 0" }}>
                 <Badge
                   pill
@@ -55,8 +61,8 @@ export default function IncidentTrackingApp() {
                 </Badge>
               </div>
             </Col>
-            <Col>
-              <img src={cover} style={{ width: "100%" }} />
+            <Col xs={12} md={7}>
+              <img src={cover} style={{ paddingTop: 30, width: "100%" }} />
             </Col>
           </Row>
         </Container>
@@ -74,10 +80,11 @@ export default function IncidentTrackingApp() {
           <Row className="justify-content-center">
             <Col md={8}>
               <p style={{ textAlign: "center" }}>
-                The goal of this project is to design an application for boiler
-                users in manufacturing industry to have better control over the
-                machine they are using on daily basis. The design process shown
-                here, particularly focus on the incident pages.
+                The goal of this project is to design an application to manage
+                machineries that are often used in traditional industries. This
+                project mainly focuses on the incident response lifecycle. It
+                helps the users to communicate more efficiently and manage time
+                better.
               </p>
             </Col>
           </Row>
@@ -88,17 +95,31 @@ export default function IncidentTrackingApp() {
           </Row>
           <Row>
             <Col xs={12} md={4} lg={3} style={{ flexDirection: "column" }}>
-              <h4>Method</h4>
-              <p>User Interview</p>
-              <h4>Participants</h4>
-              <p>6 Boilermen</p>
+              <Row>
+                <Col xs={6} md={12}>
+                  <h4>Method</h4>
+                  <p>User Interview</p>
+                </Col>
+                <Col xs={6} md={12}>
+                  <h4>Participants</h4>
+                  <p>6 Boilermen</p>
+                </Col>
+              </Row>
             </Col>
-            <Col xs={12} md={8} lg={6}>
+            <Col>
+              <p style={{ marginBottom: 0 }}>
+                The qualitative research method is used to:
+              </p>
+              <ul>
+                <li>gather in-depth insights</li>
+                <li>observe user behavior patterns</li>
+                <li>understand pain points from the users</li>
+              </ul>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-                imperdiet amet, quis odio gravida sed. Etiam a eu enim amet
-                pellentesque ac. Hac lobortis aenean massa aliquam sed morbi
-                orci, a. Id nunc, neque habitant fermentum.
+                The data is collected through interviews with six boilermen who
+                have worked as boilermen in the same environment for more than 6
+                months. The data is then analyzed and used to create a persona
+                and journey map for this project.
               </p>
             </Col>
           </Row>
@@ -121,7 +142,7 @@ export default function IncidentTrackingApp() {
               }}
             >
               <h1>Journey Map</h1>
-              <h4>
+              <h4 style={{ fontWeight: 400 }}>
                 <b>Sean’s</b> Daily Routine
               </h4>
             </Col>
@@ -139,7 +160,7 @@ export default function IncidentTrackingApp() {
         <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
             <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
-              <h1>Flow Chart</h1>
+              <h1>Flowchart</h1>
             </Col>
           </Row>
           <Row>
@@ -169,6 +190,7 @@ export default function IncidentTrackingApp() {
               <img src={lowFidelityPrototype} style={{ width: "100%" }} />
             </Col>
           </Row>
+          {/* TODO
           <Row
             style={{
               paddingTop: 200,
@@ -178,25 +200,30 @@ export default function IncidentTrackingApp() {
             <Col>
               <h1>UI Style</h1>
             </Col>
-          </Row>
+          </Row> */}
           <Row
             style={{
               paddingTop: 200,
               paddingBottom: 100,
             }}
           >
-            <Col sm={6}>
-              <h1
-                style={{
-                  paddingBottom: 100,
-                }}
-              >
+            <Col
+              sm={6}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <h1>
                 High-Fidelity
                 <br />
                 Prototype
               </h1>
-              <img src={troubleshooting} style={{ width: "100%" }} />
-              <img src={generalReport} style={{ width: "100%" }} />
+              <div>
+                <img src={troubleshooting} style={{ width: "100%" }} />
+                <img src={generalReport} style={{ width: "100%" }} />
+              </div>
             </Col>
             <Col sm={6}>
               <img src={incidentTicket} style={{ width: "100%" }} />

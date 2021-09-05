@@ -1,6 +1,10 @@
 .IncidentTrackingApp p {
   font-size: 1.5em;
-  margin-bottom: 80px;
+}
+
+.IncidentTrackingApp ul {
+  font-size: 1.5em;
+  margin-bottom: 40px;
 }
 
 .IncidentTrackingApp h1 {
