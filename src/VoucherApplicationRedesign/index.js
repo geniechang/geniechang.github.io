@@ -74,65 +74,72 @@ export default function VoucherApplicationRedesign() {
           </Row>
           <Row>
             <Col xs={12} md={4} style={{ flexDirection: "column" }}>
-              <h4>Goal</h4>
-              <p style={{ marginBottom: 45 }}>Voucher Application Redesign</p>
-              <h4>Industry</h4>
-              <p>Online Retailing</p>
+              <Row>
+                <Col xs={6} md={12} style={{ marginBottom: 45 }}>
+                  <h4>Goal</h4>
+                  <p>Voucher Application Redesign</p>
+                </Col>
+                <Col xs={6} md={12} style={{ marginBottom: 45 }}>
+                  <h4>Industry</h4>
+                  <p>Online Retailing</p>
+                </Col>
+              </Row>
             </Col>
             <Col xs={12} md={8}>
               <p>
                 <b>
                   The goal of this project is to redesign the voucher
-                  application flow for online retailing app Zalora.
+                  application flow for online retailing platform Zalora.
                 </b>
               </p>
               <h4 style={{ marginTop: 80 }}>Problem</h4>
               <p>
-                The platform always has several different promotion going at the
-                same period of time. Users have to enter the voucher code one by
-                one to compare between different promotion codes, which is time
-                comsuming and irritating.
+                The platform has always had several different promotions ongoing
+                at the same time. Users have to enter the voucher code one by
+                one to compare between different voucher codes, which is time
+                consuming and irritating.
               </p>
               <h4 style={{ marginTop: 80 }}>Redesign Plan</h4>
-              <p>Design a voucher comparison page for user, so they can:</p>
+              <p>
+                Design a voucher comparison page for users, so that they can:
+              </p>
               <ul>
-                <li>compare all vouchers at once</li>
-                <li>see how much saved with the voucher</li>
+                <li>compare all the vouchers at once</li>
+                <li>see how much is being saved with the voucher</li>
                 <li>
-                  see which item is applicable with the voucher, and which is
+                  see which items are applicable with the voucher, and which are
                   not
                 </li>
-                <li>get suggestions on how to save more with the voucher</li>
+                <li>get suggestions on how to save more with the vouchers</li>
               </ul>
             </Col>
           </Row>
           <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
-              <h1>Flow Chart</h1>
-              <p>voucher application</p>
+            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
+              <h1>Flowchart</h1>
             </Col>
           </Row>
           <Row style={{ textAlign: "center" }}>
-            <Col sm={6}>
+            <Col sm={6} style={{ paddingLeft: 60, paddingRight: 60 }}>
               <img src={originalFlow} style={{ width: "100%" }} />
               <h4 style={{ color: "#fff", margin: "60px 0 32px 0" }}>
                 Original Flow
               </h4>
               <p>
-                The original flow requires the user to enter the voucher code
-                one by one, apply to their shopping cart, memories the result
-                and compare by users themselves.
+                The original flow requires the user to enter the voucher code,
+                apply to their shopping cart, memorise the results one by one,
+                and compare the discounts by themselves.
               </p>
             </Col>
-            <Col sm={6}>
+            <Col sm={6} style={{ paddingLeft: 60, paddingRight: 60 }}>
               <img src={redesignedFlow} style={{ width: "100%" }} />
               <h4 style={{ color: "#fff", margin: "60px 0 32px 0" }}>
                 Redesigned Flow
               </h4>
               <p>
-                The redesigned flow allows user to enter the voucher code
-                manually, or use the “compare voucher” function where the app
-                list all the avaliable voucher and sort by the result.
+                The redesigned flow allows the user to enter the voucher code
+                manually, or use the “Compare Vouchers” function to apply the
+                best option available.
               </p>
             </Col>
           </Row>
@@ -204,8 +211,16 @@ export default function VoucherApplicationRedesign() {
               <h1 style={{ textAlign: "center" }}>High-Fidelity Prototype</h1>
             </Col>
           </Row>
-          <Row style={{ marginTop: 150 }}>
-            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+          <Row style={{ marginTop: 50 }}>
+            <Col
+              lg={6}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: 40,
+                marginBottom: 40,
+              }}
+            >
               <video autoPlay loop muted style={{ width: "80%" }}>
                 <source src={clip1} type="video/mp4" />
               </video>
@@ -219,13 +234,21 @@ export default function VoucherApplicationRedesign() {
               }}
             >
               <p>
-                Simply tap on compare vouchdres to get suggestions on all the
+                Simply tap on Compare Vouchers to get suggestions on all the
                 avaliable vouchers
               </p>
             </Col>
           </Row>
-          <Row style={{ marginTop: 150 }}>
-            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+          <Row style={{ marginTop: 50 }}>
+            <Col
+              lg={6}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: 40,
+                marginBottom: 40,
+              }}
+            >
               <video autoPlay loop muted style={{ width: "80%" }}>
                 <source src={clip2} type="video/mp4" />
               </video>
@@ -241,12 +264,11 @@ export default function VoucherApplicationRedesign() {
               <ul>
                 <li>Compare all the avaliable vouchers at once</li>
                 <li>
-                  Get information on how to apply promotions that’s not yet
-                  applicable
+                  Get instructions on how to satisfy unmet voucher conditions
                 </li>
                 <br />
                 <li>
-                  Add voucher manually into the list (e.g. birthday voucher)
+                  Add a voucher manually into the list (e.g. birthday voucher)
                   <video autoPlay loop muted style={{ width: "80%" }}>
                     <source src={clip4} type="video/mp4" />
                   </video>
@@ -254,8 +276,16 @@ export default function VoucherApplicationRedesign() {
               </ul>
             </Col>
           </Row>
-          <Row style={{ marginTop: 150 }}>
-            <Col md={6} style={{ display: "flex", justifyContent: "center" }}>
+          <Row style={{ marginTop: 50 }}>
+            <Col
+              lg={6}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: 40,
+                marginTop: 40,
+              }}
+            >
               <video autoPlay loop muted style={{ width: "80%" }}>
                 <source src={clip3} type="video/mp4" />
               </video>
@@ -269,9 +299,8 @@ export default function VoucherApplicationRedesign() {
               }}
             >
               <p>
-                Different view to compare more information of different
-                vouchers. Simply tap on apply to use the voucher after
-                comparison.
+                Different views to compare between different vouchers. Simply
+                tap on Apply to use the voucher after comparison.
               </p>
             </Col>
           </Row>
