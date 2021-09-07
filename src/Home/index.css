@@ -14,7 +14,7 @@
 
 .Home-white-color {
   color: #f2f2f2;
-  text-align: end;
+  text-align: end !important;
 }
 
 .Home-genie {

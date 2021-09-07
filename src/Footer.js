@@ -1,9 +1,12 @@
-function Footer() {
+import { withRouter } from "react-router";
+
+function Footer({ location }) {
+  const dark = location.pathname === "/projects/voucher-application-redesign";
   return (
     <div
       style={{
-        background: "#2c2c2c",
-        color: "#fff",
+        background: dark ? "#f2f2f2" : "#2c2c2c",
+        color: dark ? "#2c2c2c" : "#f2f2f2",
         fontSize: 20,
         padding: "110px 0",
         textAlign: "center",
@@ -14,4 +17,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default withRouter(Footer);

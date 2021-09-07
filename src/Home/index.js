@@ -2,11 +2,11 @@ import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 import incidentTrackingAppCover from "../IncidentTrackingApp/cover.svg";
-import voucherAppliactionRedesignCover from "../VoucherApplicationRedesign/cover-home.svg";
 import genie from "./genie.svg";
 import about from "./about.svg";
 import wave from "../Wave.svg";
 import aboutSmiley from "./about-smiley.svg";
+import clip5 from "./clip5.mp4";
 
 import "./index.css";
 
@@ -94,15 +94,17 @@ export default function Home() {
             </Col>
           </Row>
           <Row style={{ marginTop: 150 }}>
-            <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
+            <Col
+              lg={4}
+              style={{ paddingLeft: 30, paddingRight: 30, textAlign: "center" }}
+            >
               <LinkContainer
                 to="/projects/voucher-application-redesign"
-                style={{ cursor: "pointer", width: "100%" }}
+                style={{ cursor: "pointer", width: "84%" }}
               >
-                <img
-                  src={voucherAppliactionRedesignCover}
-                  style={{ width: "100%" }}
-                />
+                <video autoPlay loop muted>
+                  <source src={clip5} type="video/mp4" />
+                </video>
               </LinkContainer>
             </Col>
             <Col style={{ paddingLeft: 30, paddingRight: 30 }}>

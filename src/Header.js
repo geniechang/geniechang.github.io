@@ -1,15 +1,26 @@
-import { Container } from "react-bootstrap";
+import { withRouter } from "react-router";
+import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function Header() {
+import "./Header.css";
+
+function Header({ location }) {
+  const dark = location.pathname === "/projects/voucher-application-redesign";
+
   return (
-    <Navbar sticky="top" bg="light" expand="sm">
+    <Navbar
+      sticky="top"
+      expand="sm"
+      className={dark ? "Header-dark" : "Header-light"}
+    >
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/" className={dark ? "Link-dark" : "Link-light"}>
+              Home
+            </Nav.Link>
             <Nav.Link href="/#projects">Projects</Nav.Link>
             {/* TODO: add nav for specific projects? */}
             <Nav.Link href="/#about">About</Nav.Link>
@@ -20,4 +31,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default withRouter(Header);

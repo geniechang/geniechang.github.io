@@ -160,11 +160,11 @@ export default function IncidentTrackingApp() {
         <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
             <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
-              <h1>Flowchart</h1>
+              <h1>Incident Flowchart</h1>
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col lg={{ span: 8, offset: 2 }}>
               <img src={flowChart} style={{ width: "100%" }} />
             </Col>
           </Row>

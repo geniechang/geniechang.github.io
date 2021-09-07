@@ -10,22 +10,23 @@ import VoucherApplicationRedesign from "./VoucherApplicationRedesign";
 export default function App() {
   return (
     <div className="App-container">
-      <Header />
       <Router>
-        <ScrollToTop />
+        <Header />
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/projects/incident-tracking-app">
+            <ScrollToTop />
             <IncidentTrackingApp />
           </Route>
           <Route path="/projects/voucher-application-redesign">
+            <ScrollToTop />
             <VoucherApplicationRedesign />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
