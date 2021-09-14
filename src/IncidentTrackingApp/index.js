@@ -107,19 +107,22 @@ export default function IncidentTrackingApp() {
               </Row>
             </Col>
             <Col>
-              <p style={{ marginBottom: 0 }}>
-                The qualitative research method is used to:
-              </p>
+              <p>The goal of this research is to find out</p>
               <ul>
-                <li>gather in-depth insights</li>
-                <li>observe user behavior patterns</li>
-                <li>understand pain points from the users</li>
+                <li>how do the daily routines of the users look like?</li>
+                <li>
+                  how long does it take for the users to find out about an
+                  incident?
+                </li>
+                <li>how do the users respond to an incident?</li>
+                <li>how do the users resolve an incident?</li>
               </ul>
               <p>
-                The data is collected through interviews with six boilermen who
-                have worked as boilermen in the same environment for more than 6
-                months. The data is then analyzed and used to create a persona
-                and journey map for this project.
+                Since most of the boiler users are small to medium businesses, a
+                boiler company helped me to find six boilermen who work in small
+                to medium businesses to conduct the research. The data is
+                subsequently analysed and used to create a persona and journey
+                map for this project.
               </p>
             </Col>
           </Row>
@@ -175,14 +178,21 @@ export default function IncidentTrackingApp() {
         <Container>
           <Row>
             <Col
+              lg={{ offset: 6, span: 6 }}
               style={{
                 display: "flex",
-                justifyContent: "flex-end",
+                flexDirection: "column",
                 paddingTop: 100,
-                paddingBottom: 50,
               }}
+              className="IncidentTrackingApp-lofi-col"
             >
-              <h1>Low-Fidelity Prototype</h1>
+              <h1 style={{ textAlign: "end" }}>Low-Fidelity Prototype</h1>
+              <p>
+                I built this low-fidelity prototype to explore the incident
+                management flow and get feedback from others. Therefore, the
+                usability of the flow can be quickly experimented with and
+                iterated.
+              </p>
             </Col>
           </Row>
           <Row>

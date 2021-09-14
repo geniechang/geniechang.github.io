@@ -38,3 +38,12 @@
   margin-right: 16px;
   padding: 6px 16px 8px 16px;
 }
+
+.IncidentTrackingApp-lofi-col {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .IncidentTrackingApp-lofi-col {
+    margin-bottom: -50px;
+  }
+}
