@@ -97,9 +97,9 @@ export default function IncidentTrackingApp() {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row style={{ marginTop: 200, marginBottom: 20 }}>
             <Col>
-              <h1 style={{ padding: "100px 0 50px 0" }}>Research</h1>
+              <h1>Research</h1>
             </Col>
           </Row>
           <Row>
@@ -135,22 +135,20 @@ export default function IncidentTrackingApp() {
               </p>
             </Col>
           </Row>
-          <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
+          <Row style={{ marginTop: 200, marginBottom: 20 }}>
+            <Col>
               <h1 style={{ textAlign: "end" }}>Persona</h1>
             </Col>
           </Row>
           <Row>
             <img src={persona} style={{ width: "100%" }} />
           </Row>
-          <Row>
+          <Row style={{ marginTop: 200, marginBottom: 20 }}>
             <Col
               style={{
                 alignItems: "baseline",
                 display: "flex",
                 justifyContent: "space-between",
-                paddingTop: 100,
-                paddingBottom: 20,
               }}
             >
               <h1>Journey Map</h1>
@@ -162,16 +160,8 @@ export default function IncidentTrackingApp() {
           <Row>
             <img src={journeyMap} style={{ width: "100%" }} />
           </Row>
-        </Container>
-      </div>
-      <div className="IncidentTrackingApp IncidentTrackingApp-flowchart">
-        <img
-          src={wave}
-          style={{ marginTop: -1, transform: "rotate(180deg)", width: "100%" }}
-        />
-        <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
-          <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
+          <Row style={{ marginTop: 250, marginBottom: 100 }}>
+            <Col>
               <h1>Incident Flowchart</h1>
             </Col>
           </Row>
@@ -180,17 +170,8 @@ export default function IncidentTrackingApp() {
               <img src={flowChart} style={{ width: "100%" }} />
             </Col>
           </Row>
-        </Container>
-        <img src={wave} style={{ width: "100%" }} />
-      </div>
-      <div className="IncidentTrackingApp" style={{ background: "#ffffff" }}>
-        <Container>
-          <Row>
-            <Col
-              lg={6}
-              style={{ paddingTop: 100, paddingBottom: 40 }}
-              className="IncidentTrackingApp-lofi-col"
-            >
+          <Row style={{ marginTop: 250, marginBottom: 40 }}>
+            <Col lg={8} className="IncidentTrackingApp-lofi-col">
               <h1>Low-Fidelity Prototype</h1>
               <p>
                 I built this low-fidelity prototype to explore the incident

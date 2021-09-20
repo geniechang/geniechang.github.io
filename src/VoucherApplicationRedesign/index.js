@@ -56,20 +56,12 @@ export default function VoucherApplicationRedesign() {
               </Badge>
             </Col>
             <Col>
-              <img src={cover} style={{ width: "100%" }} />
+              <img src={cover} style={{ paddingTop: 40, width: "90%" }} />
             </Col>
           </Row>
-          <Row>
+          <Row style={{ marginTop: 200, marginBottom: 40 }}>
             <Col>
-              <h1
-                style={{
-                  paddingTop: 100,
-                  paddingBottom: 30,
-                  textAlign: "center",
-                }}
-              >
-                Overview
-              </h1>
+              <h1>Overview</h1>
             </Col>
           </Row>
           <Row>
@@ -86,13 +78,7 @@ export default function VoucherApplicationRedesign() {
               </Row>
             </Col>
             <Col xs={12} md={8}>
-              <p>
-                <b>
-                  The goal of this project is to redesign the voucher
-                  application flow for online retailing platform Zalora.
-                </b>
-              </p>
-              <h4 style={{ marginTop: 80 }}>Problem</h4>
+              <h4>Problem</h4>
               <p>
                 The platform has always had several different promotions ongoing
                 at the same time. Users have to enter the voucher code one by
@@ -114,8 +100,8 @@ export default function VoucherApplicationRedesign() {
               </ul>
             </Col>
           </Row>
-          <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
+          <Row style={{ marginTop: 200, marginBottom: 40 }}>
+            <Col>
               <h1>Flowchart</h1>
             </Col>
           </Row>
@@ -143,8 +129,8 @@ export default function VoucherApplicationRedesign() {
               </p>
             </Col>
           </Row>
-          <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
+          <Row style={{ marginTop: 200, marginBottom: 40 }}>
+            <Col>
               <h1>Low-Fidelity Prototype</h1>
             </Col>
           </Row>
@@ -167,7 +153,6 @@ export default function VoucherApplicationRedesign() {
               <img src={typography01} style={{ width: "100%" }} />
             </Col>
             <Col md={4} style={{ marginBottom: 100 }}>
-              <h4>Iconography</h4>
               <img src={typography02} style={{ width: "100%" }} />
             </Col>
             <Col md={4} style={{ marginBottom: 100 }}>
@@ -175,27 +160,26 @@ export default function VoucherApplicationRedesign() {
             </Col>
           </Row>
           <Row>
-            <Col>
-              <h4>Buttons</h4>
-            </Col>
-          </Row>
-          <Row>
             <Col md={8} style={{ marginBottom: 100 }}>
-              <img src={buttons} style={{ width: "100%" }} />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={4} style={{ marginBottom: 100 }}>
-              <h4 style={{ marginBottom: 32 }}>Colors</h4>
-              <img src={colors} style={{ width: "100%" }} />
+              <h4 style={{ marginBottom: 32 }}>Buttons</h4>
+              <img src={buttons} style={{ width: "80%", marginLeft: "-1%" }} />
+              <h4 style={{ marginTop: 64, marginBottom: 32 }}>Colours</h4>
+              <img src={colors} style={{ width: "84%", marginLeft: "-2.2%" }} />
+              <p style={{ width: "80%", fontSize: 20, marginTop: 32 }}>
+                I have kept two colours of the original Zalora palette as the
+                primary ones of this design, since they have a great colour
+                contrast ratio and are also visually appealing. I did tone down
+                the full black colour that Zalora used, to make it less bright
+                to the eyes.
+              </p>
             </Col>
             <Col md={4} style={{ marginBottom: 100 }}>
               <h4 style={{ marginBottom: 32 }}>Iconography</h4>
               <img src={iconography} style={{ width: "100%" }} />
-            </Col>
-            <Col md={4} style={{ marginBottom: 100 }}>
-              <h4 style={{ marginBottom: 32 }}>Shadows</h4>
-              <img src={shadows} style={{ width: "100%" }} />
+              <p style={{ fontSize: 20, marginTop: 32 }}>
+                I designed these icons with smooth edges to have brevity and
+                clarity that matches the chosen font.
+              </p>
             </Col>
           </Row>
         </Container>
@@ -206,7 +190,7 @@ export default function VoucherApplicationRedesign() {
           style={{ marginTop: -1, transform: "rotate(180deg)", width: "100%" }}
         />
         <Container style={{ fontSize: 13.33 }}>
-          <Row style={{ marginTop: 60 }}>
+          <Row style={{ marginTop: 150, marginBottom: 40 }}>
             <Col>
               <h1 style={{ textAlign: "center" }}>High-Fidelity Prototype</h1>
             </Col>

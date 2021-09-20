@@ -31,6 +31,22 @@
   padding: 6px 16px 8px 16px;
 }
 
+.Home-projects img {
+  transition: transform 0.2s;
+}
+
+.Home-projects img:hover {
+  transform: scale(1.1);
+}
+
+.Home-projects video {
+  transition: transform 0.2s;
+}
+
+.Home-projects video:hover {
+  transform: scale(1.1);
+}
+
 .Home-projects h4 {
   font-size: 30px;
   font-weight: 700;

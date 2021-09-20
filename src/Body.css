@@ -1,0 +1,9 @@
+.Body-fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.Body-fade-enter.Body-fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}

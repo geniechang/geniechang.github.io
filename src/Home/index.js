@@ -63,6 +63,7 @@ export default function Home() {
             <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
               <LinkContainer
                 to="/projects/incident-tracking-app"
+                className="xxx"
                 style={{ cursor: "pointer", width: "100%" }}
               >
                 <img src={incidentTrackingAppCover} style={{ width: "100%" }} />
@@ -84,13 +85,11 @@ export default function Home() {
                 machineries that are often used in traditional industries. This
                 project mainly focuses on the incident response lifecycle.
               </p>
-              <Button
-                href="/projects/incident-tracking-app"
-                variant="link"
-                className="Home-projects-more"
-              >
-                Read More
-              </Button>
+              <LinkContainer to="/projects/incident-tracking-app">
+                <Button variant="link" className="Home-projects-more">
+                  Read More
+                </Button>
+              </LinkContainer>
             </Col>
           </Row>
           <Row style={{ marginTop: 150 }}>
@@ -122,13 +121,11 @@ export default function Home() {
                 best pick among them, which removes the frustration from the
                 checkout experience.
               </p>
-              <Button
-                href="/projects/voucher-application-redesign"
-                variant="link"
-                className="Home-projects-more"
-              >
-                Read More
-              </Button>
+              <LinkContainer to="/projects/voucher-application-redesign">
+                <Button variant="link" className="Home-projects-more">
+                  Read More
+                </Button>
+              </LinkContainer>
             </Col>
           </Row>
           <Row className="Home-about">
