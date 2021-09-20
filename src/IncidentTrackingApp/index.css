@@ -39,11 +39,11 @@
   padding: 6px 16px 8px 16px;
 }
 
-.IncidentTrackingApp-lofi-col {
-  margin-bottom: 0;
+.IncidentTrackingApp-hifi-row {
+  margin-bottom: 100px;
 }
-@media (min-width: 992px) {
-  .IncidentTrackingApp-lofi-col {
-    margin-bottom: -50px;
-  }
+
+.IncidentTrackingApp-hifi-row img {
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.08));
+  width: 100%;
 }

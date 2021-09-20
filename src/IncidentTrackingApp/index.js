@@ -7,9 +7,18 @@ import flowChart from "./flow_chart.svg";
 import journeyMap from "./journey_map.svg";
 import lowFidelityPrototype from "./low_fidelity_prototype.svg";
 import incidentReport from "./incident_report.svg";
+import incidentReportArrow from "./incident_report_arrow.svg";
 import incidentTicket from "./incident_ticket.svg";
+import incidentTicketArrow from "./incident_ticket_arrow.svg";
 import troubleshooting from "./troubleshooting.svg";
+import troubleshootingArrow from "./troubleshooting_arrow.svg";
 import generalReport from "./general_report.svg";
+import generalReportArrow from "./general_report_arrow.svg";
+import uiColourBase from "./ui_colour_base.svg";
+import uiColourBright from "./ui_colour_bright.svg";
+import uiColourNeutral from "./ui_colour_neutral.svg";
+import uiColourSoft from "./ui_colour_soft.svg";
+import uiIconography from "./ui_iconography.svg";
 import persona from "./persona.svg";
 
 import "./index.css";
@@ -162,12 +171,12 @@ export default function IncidentTrackingApp() {
         />
         <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
-            <Col style={{ paddingTop: 100, paddingBottom: 20 }}>
+            <Col style={{ paddingTop: 100, paddingBottom: 100 }}>
               <h1>Incident Flowchart</h1>
             </Col>
           </Row>
           <Row>
-            <Col lg={{ span: 8, offset: 2 }}>
+            <Col>
               <img src={flowChart} style={{ width: "100%" }} />
             </Col>
           </Row>
@@ -178,15 +187,11 @@ export default function IncidentTrackingApp() {
         <Container>
           <Row>
             <Col
-              lg={{ offset: 6, span: 6 }}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                paddingTop: 100,
-              }}
+              lg={6}
+              style={{ paddingTop: 100, paddingBottom: 40 }}
               className="IncidentTrackingApp-lofi-col"
             >
-              <h1 style={{ textAlign: "end" }}>Low-Fidelity Prototype</h1>
+              <h1>Low-Fidelity Prototype</h1>
               <p>
                 I built this low-fidelity prototype to explore the incident
                 management flow and get feedback from others. Therefore, the
@@ -200,7 +205,6 @@ export default function IncidentTrackingApp() {
               <img src={lowFidelityPrototype} style={{ width: "100%" }} />
             </Col>
           </Row>
-          {/* TODO
           <Row
             style={{
               paddingTop: 200,
@@ -210,34 +214,132 @@ export default function IncidentTrackingApp() {
             <Col>
               <h1>UI Style</h1>
             </Col>
-          </Row> */}
+          </Row>
+          <Row>
+            <Col>
+              <h4>Colours</h4>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <img
+                src={uiColourBase}
+                style={{ width: "80%", marginLeft: "-2.5%", marginBottom: 50 }}
+              />
+            </Col>
+            <Col lg={6}>
+              <img
+                src={uiColourNeutral}
+                style={{ width: "100%", marginLeft: "-2.5%", marginBottom: 50 }}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <img
+                src={uiColourBright}
+                style={{ width: "80%", marginLeft: "-2.5%", marginBottom: 50 }}
+              />
+            </Col>
+            <Col lg={6}>
+              <img
+                src={uiColourSoft}
+                style={{ width: "80%", marginLeft: "-2.5%", marginBottom: 50 }}
+              />
+            </Col>
+          </Row>
+          <Row style={{ marginTop: 100 }}>
+            <Col>
+              <h4>Iconography</h4>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <img src={uiIconography} style={{ width: "100%" }} />
+            </Col>
+          </Row>
           <Row
             style={{
-              paddingTop: 200,
-              paddingBottom: 100,
+              marginTop: 200,
+              marginBottom: 64,
             }}
           >
-            <Col
-              sm={6}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
-            >
-              <h1>
-                High-Fidelity
-                <br />
-                Prototype
-              </h1>
-              <div>
-                <img src={troubleshooting} style={{ width: "100%" }} />
-                <img src={generalReport} style={{ width: "100%" }} />
-              </div>
+            <Col>
+              <h1>High-Fidelity Prototype</h1>
             </Col>
-            <Col sm={6}>
-              <img src={incidentTicket} style={{ width: "100%" }} />
-              <img src={incidentReport} style={{ width: "100%" }} />
+          </Row>
+          <Row className="IncidentTrackingApp-hifi-row">
+            <Col md={6}>
+              <div style={{ position: "relative" }}>
+                <img src={incidentTicket} />
+                <img
+                  src={incidentTicketArrow}
+                  style={{
+                    width: "30%",
+                    position: "absolute",
+                    top: "14.5%",
+                    right: "-23.2%",
+                  }}
+                />
+              </div>
+              <p style={{ marginTop: 50, paddingRight: "20%" }}>
+                With the troubleshooting assistant, the technicians are able to
+                start troubleshooting immediately without having to look back to
+                the paper manual.
+              </p>
+              <div style={{ position: "relative", marginTop: 50 }}>
+                <img src={generalReport} />
+                <img
+                  src={generalReportArrow}
+                  style={{
+                    width: "15%",
+                    position: "absolute",
+                    bottom: "-13%",
+                    right: "3%",
+                  }}
+                />
+              </div>
+              <p style={{ marginTop: 50, paddingRight: "20%" }}>
+                The report generator collects and processes all the data from
+                the incident, which helps technicians to create a report with
+                just a few taps.
+              </p>
+              <p style={{ marginTop: 50, paddingRight: "20%" }}>
+                The incident report provides a retrospective view of the
+                incident, with timelines, graphs and charts to help identify
+                trends and detect anomalies.
+              </p>
+            </Col>
+            <Col md={6}>
+              <p style={{ marginTop: 50, paddingLeft: "20%" }}>
+                The buttons on the timeline allow the technicians to easily
+                update their status with little hassle. Therefore, more timely
+                updates can be sent out to other people.
+              </p>
+              <div style={{ position: "relative" }}>
+                <img src={troubleshooting} style={{ marginTop: 50 }} />
+                <img
+                  src={troubleshootingArrow}
+                  style={{
+                    width: "40%",
+                    position: "absolute",
+                    left: "-25%",
+                    bottom: "31%",
+                  }}
+                />
+              </div>
+              <div style={{ position: "relative" }}>
+                <img src={incidentReport} />
+                <img
+                  src={incidentReportArrow}
+                  style={{
+                    width: "28%",
+                    position: "absolute",
+                    left: "-24%",
+                    bottom: "0%",
+                  }}
+                />
+              </div>
             </Col>
           </Row>
         </Container>
