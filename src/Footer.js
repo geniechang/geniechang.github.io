@@ -8,11 +8,11 @@ function Footer({ location }) {
         background: dark ? "#f2f2f2" : "#2c2c2c",
         color: dark ? "#2c2c2c" : "#f2f2f2",
         fontSize: 20,
-        padding: "110px 0",
+        padding: "32px 0",
         textAlign: "center",
       }}
     >
-      © 2021 created by Genie Chang
+      © 2022 created by Genie Chang
     </div>
   );
 }

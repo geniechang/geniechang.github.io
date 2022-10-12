@@ -1,0 +1,92 @@
+.ItsRainingRaincoatRedesign {
+  background: #f2f2f2;
+}
+
+.ItsRainingRaincoatRedesign p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ItsRainingRaincoatRedesign h1 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.ItsRainingRaincoatRedesign h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.ItsRainingRaincoatRedesign h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.ItsRainingRaincoatRedesign-cover {
+  background: #f2f2f2;
+  margin-bottom: -2px; /* hack to solve a ghost line issue */
+}
+
+.ItsRainingRaincoatRedesign-discover {
+  background: #FBEACA;
+}
+
+.ItsRainingRaincoatRedesign-discover-card {
+  text-align: center;
+}
+
+.ItsRainingRaincoatRedesign-discover-card img {
+  width: 192px; 
+  /* padding: 0 16% 16% 16%; */
+}
+
+.ItsRainingRaincoatRedesign-discover-card h2 {
+  color: #3A70A6;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 80px;
+}
+
+.ItsRainingRaincoatRedesign-discover-card h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.ItsRainingRaincoatRedesign-discover-card p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.ItsRainingRaincoatRedesign-ideation {
+  background: #FBEACA;
+}
+
+.ItsRainingRaincoatRedesign-reflection {
+  background: #FBEACA;
+  padding-bottom: 120px;
+}
+
+.ItsRainingRaincoatRedesign-design {
+  padding-top: 100px;
+}
+
+.ItsRainingRaincoatRedesign-design-button {
+  background: #FFBF40;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+}
+
+.ItsRainingRaincoatRedesign .ItsRainingRaincoatRedesign-badge {
+  background-color: #FFBF40 !important;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  color: #2C2C2C;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 16px;
+  padding: 6px 16px 8px 16px;
+}

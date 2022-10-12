@@ -6,7 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
 
 function Header({ location }) {
-  const dark = location.pathname !== "/projects/incident-tracking-app";
+  // const dark = location.pathname !== "/projects/incident-tracking-app";
+  const dark = false;
 
   return (
     <Navbar

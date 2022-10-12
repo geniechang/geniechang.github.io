@@ -8,6 +8,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from "./Home";
 import IncidentTrackingApp from "./IncidentTrackingApp";
+import ItsRainingRaincoatRedesign from "./ItsRainingRaincoatRedesign";
 import ScrollToTop from "./ScrollToTop";
 import VoucherApplicationRedesign from "./VoucherApplicationRedesign";
 
@@ -32,6 +33,10 @@ export default function Body() {
             <Route path="/projects/voucher-application-redesign">
               <ScrollToTop />
               <VoucherApplicationRedesign />
+            </Route>
+            <Route path="/projects/its-raining-raincoat-redesign">
+              <ScrollToTop />
+              <ItsRainingRaincoatRedesign />
             </Route>
           </Switch>
         </CSSTransition>

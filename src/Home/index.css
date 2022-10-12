@@ -7,13 +7,13 @@
 
 .Home-container {
   background: url(./Stars.svg) no-repeat center,
-    linear-gradient(#e66465, #9198e5);
+    linear-gradient(#E6CFBD 0%, #D9B9BE 51.04%, #ACD2E6 100%);
   background-size: cover;
   margin-bottom: -2px; /* hack to solve a ghost line issue */
 }
 
-.Home-white-color {
-  color: #f2f2f2;
+.Home-blue-color {
+  color: #3A70A6;
   text-align: end !important;
 }
 
@@ -25,6 +25,7 @@
 .Home-badge {
   background: #ff9f40;
   box-shadow: 0px 6px 20px 0px #bbbbbb;
+  color: #2C2C2C;
   font-size: 16px;
   font-weight: 400;
   margin-right: 16px;

@@ -7,6 +7,7 @@ import about from "./about.svg";
 import wave from "../Wave.svg";
 import aboutSmiley from "./about-smiley.svg";
 import clip5 from "./clip5.mp4";
+import irrCover from "./irr-cover.png";
 
 import "./index.css";
 
@@ -16,8 +17,18 @@ export default function Home() {
       <div className="Home Home-container">
         <Container style={{ paddingTop: 100, paddingBottom: 150 }}>
           <Row>
+            <Col
+              className="justify-content-end"
+              style={{ display: "flex", marginBottom: 36 }}
+            >
+              <h1 className="Home-blue-color" style={{ fontSize: 30 }}>
+                Good design is invisible, just like magic
+              </h1>
+            </Col>
+          </Row>
+          <Row>
             <Col className="justify-content-end" style={{ display: "flex" }}>
-              <h1 className="Home-white-color" style={{ fontSize: "2.8em" }}>
+              <h1 className="Home-blue-color" style={{ fontSize: "2.8em" }}>
                 Make the magic of design happen
               </h1>
             </Col>
@@ -27,18 +38,34 @@ export default function Home() {
               {/* TODO: split the image into 2, and make the wave responsive */}
               <img className="Home-genie" src={genie} />
             </Col>
-            <Col
-              xs={12}
-              md={6}
-              className="justify-content-end"
-              style={{ display: "flex" }}
-            >
+            <Col xs={12} md={6}>
               <h1
-                className="Home-white-color"
-                style={{ fontSize: "3.5em", paddingTop: "0.6em" }}
+                className="Home-blue-color"
+                style={{
+                  fontSize: "3.5em",
+                  fontWeight: 300,
+                  paddingTop: "0.6em",
+                }}
               >
                 Hello, I am Genie
               </h1>
+              <div
+                className="justify-content-end"
+                style={{ display: "flex", marginTop: 46 }}
+              >
+                <Button
+                  href="./GenieChang-CV.pdf"
+                  target="_blank"
+                  size="lg"
+                  variant="warning"
+                  style={{
+                    borderRadius: 32,
+                    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  DOWNLOAD CV
+                </Button>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -62,66 +89,34 @@ export default function Home() {
           <Row>
             <Col lg={4} style={{ paddingLeft: 30, paddingRight: 30 }}>
               <LinkContainer
-                to="/projects/incident-tracking-app"
+                to="/projects/its-raining-raincoat-redesign"
                 className="xxx"
                 style={{ cursor: "pointer", width: "100%" }}
               >
-                <img src={incidentTrackingAppCover} style={{ width: "100%" }} />
+                <img src={irrCover} alt="" style={{ width: "100%" }} />
               </LinkContainer>
             </Col>
             <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
-              <h4>Incident Management Application</h4>
-              <Badge pill variant="primary" className="Home-badge">
-                UX
+              <h4>
+                Design to break barriers between migrant workers and residents
+                of Singapore
+              </h4>
+              <Badge pill bg="warning" className="Home-badge">
+                UX/UI
               </Badge>{" "}
-              <Badge pill variant="primary" className="Home-badge">
-                UI
+              <Badge pill bg="warning" className="Home-badge">
+                Redesign
               </Badge>{" "}
-              <Badge pill variant="primary" className="Home-badge">
-                Tablet App
+              <Badge pill bg="warning" className="Home-badge">
+                Android
               </Badge>
               <p>
-                The goal of this project is to design an application to manage
-                machineries that are often used in traditional industries. This
-                project mainly focuses on the incident response lifecycle.
+                In this project, we were challenged to review, assess and
+                recommend how to make ItsRainingRaincoats'(IRR) online
+                experiences more engaging, impactful, and usable for their
+                audiences.
               </p>
-              <LinkContainer to="/projects/incident-tracking-app">
-                <Button variant="link" className="Home-projects-more">
-                  Read More
-                </Button>
-              </LinkContainer>
-            </Col>
-          </Row>
-          <Row style={{ marginTop: 150 }}>
-            <Col
-              lg={4}
-              style={{ paddingLeft: 30, paddingRight: 30, textAlign: "center" }}
-            >
-              <LinkContainer
-                to="/projects/voucher-application-redesign"
-                style={{ cursor: "pointer", width: "84%" }}
-              >
-                <video autoPlay loop muted>
-                  <source src={clip5} type="video/mp4" />
-                </video>
-              </LinkContainer>
-            </Col>
-            <Col style={{ paddingLeft: 30, paddingRight: 30 }}>
-              <h4>Voucher Application Redesign</h4>
-              <Badge pill variant="primary" className="Home-badge">
-                UI
-              </Badge>{" "}
-              <Badge pill variant="primary" className="Home-badge">
-                Tablet App
-              </Badge>
-              <p>
-                Online retailing platform Zalora often provides an overwhelming
-                amount of vouchers for their users to choose from during
-                checkout. The redesign helps their users to quickly take the
-                best pick among them, which removes the frustration from the
-                checkout experience.
-              </p>
-              <LinkContainer to="/projects/voucher-application-redesign">
+              <LinkContainer to="/projects/its-raining-raincoat-redesign">
                 <Button variant="link" className="Home-projects-more">
                   Read More
                 </Button>
